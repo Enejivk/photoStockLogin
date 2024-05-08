@@ -1,0 +1,194 @@
+/* LINK TO MONTSERRATE GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* HEADER STYLING */
+header,
+.logo,
+.create-account,
+.sign-in-with-google,
+form {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    justify-content: space-between;
+    padding: 20px 5rem;
+    margin-bottom: 20px;
+}
+.logo img {
+    margin-right: 20px;
+}
+.close {
+    transition: 0.6s;
+}
+.close:hover {
+    transform: rotate(30deg);
+}
+/* CREATE ACCOUNT CONTAINER STYLING */
+.create-account {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    column-gap: 2%;
+}
+
+/* FORM STYLING */
+.create-account-group-picture {
+    flex-basis: 45%;
+}
+.create-account-group-picture .image {
+    width: 100%;
+}
+form {
+    flex-direction: column;
+    flex-basis: 40%;
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-shadow: -1px 6px 47px 4px rgba(0, 0, 0, 0.26);
+}
+/* FORM LINK STYLING */
+form a {
+    font-weight: bold;
+    color: black;
+}
+.no-underline {
+    text-decoration: none;
+}
+form h2 {
+    width: 87%;
+}
+/* STYLING FOR INPUT AND BUTTONS */
+form > input,
+form > button {
+    border: 1px solid black;
+    padding: 14px 30px;
+    border-radius: 8px;
+    min-width: 400px;
+}
+form > input,
+form > button,
+hr {
+    margin: 8px 0;
+    width: 90%;
+}
+hr {
+    border: 0.2px solid rgb(108, 104, 104);
+}
+.terms-and-condition {
+    font-size: 10px;
+}
+.link-to-login {
+    font-size: 13px;
+    margin: 9px 0;
+}
+
+.link-to-login,
+.terms-and-condition {
+    width: 87%;
+}
+.sign-in-with-google {
+    justify-content: center;
+    column-gap: 30px;
+    transition: 0.7s;
+}
+.sign-in-with-google:hover {
+    background-color: black;
+    color: white;
+}
+button[type="submit"] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    transition: 1s;
+}
+button[type="submit"]:hover {
+    color: black;
+    background-color: rgb(255, 254, 252);
+}
+/* FORGET AND REMEMBER ME */
+.remember-and-forget-password {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remember-and-forget-password a,
+.remember-and-forget-password {
+    font-size: 13px;
+    margin: 9px 0;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+.no-underline:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+/* DESIGN FOR TABLET */
+@media screen and (max-width: 1000px) {
+    .create-account {
+        flex-direction: column;
+    }
+    .create-account-group-picture {
+        order: 1;
+        min-width: 80vw;
+    }
+    form {
+        order: 2;
+    }
+    .create-account-group-picture image {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .sign-in-with-google {
+        font-size: 12px;
+    }
+    form > input,
+    form > button,
+    form>hr {
+        min-width: 80vw;
+    }
+}
+
+/* DESIGN FOR MOBILE SCREEN */
+@media screen and (max-width: 430px) {
+    .create-account-group-picture {
+        display: none;
+    }
+    form {
+        flex-basis: 100%;
+    }
+    header {
+        justify-content: space-between;
+        padding: 5px 1rem;
+        margin-bottom: 10px;
+    }
+    .logo img {
+        margin-right: 10px;
+    }
+    .sign-in-with-google {
+        font-size: 10px;
+    }
+    form > input,
+    form > button {
+        min-width: 80vw;
+    }
+    .remember-and-forget-password a,
+    .remember-and-forget-password {
+        font-size: 3.6vw;
+        margin: 9px 0;
+    }
+    .remember-and-forget-password {
+        flex-direction: column;
+    }
+}
