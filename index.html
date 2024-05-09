@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="./image/logo.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
         <title>Create Account</title>
     </head>
     <body>
-        
         <!-- HEADER CONTAINING THE LOGO -->
         <header>
             <div class="logo">
@@ -18,7 +18,6 @@
             <div class="close"><img src="./image/close.svg" alt="" /></div>
         </header>
         <section class="create-account">
-            
             <!-- FORM SECTION -->
             <form action="" method="post">
                 <h2>Create an account</h2>
@@ -26,7 +25,10 @@
                 <input type="text" placeholder="Business name" required />
                 <input type="text" placeholder="Website (optional)" />
                 <input type="email" placeholder="Email address" required />
-                <input type="password" placeholder="Password" required />
+                <div class="password-container">
+                    <input type="password" name="password" id="password" placeholder="Password" required />
+                    <i class="fa-solid fa-eye-slash" id="show-password"></i>
+                </div>
                 <button type="submit">SIGNUP</button>
                 <hr />
                 <button type="button" class="sign-in-with-google">
@@ -35,11 +37,12 @@
                 </button>
                 <p class="terms-and-condition">By creating an account, you agree to PictureStock’s <a href="">Terms of Service</a>, and have read and understood the <a href="">Privacy Policy.</a></p>
             </form>
-            
+
             <!-- FORM IMAGE  -->
             <div class="create-account-group-picture">
-                <img src="./image/group_photo.jpg" alt="" class="image"/>
+                <img src="./image/group_photo.jpg" alt="" class="image" />
             </div>
         </section>
+        <script src="script.js"></script>
     </body>
 </html>

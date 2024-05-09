@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="./image/logo.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
         <title>Login</title>
     </head>
     <body>
@@ -17,15 +18,17 @@
             <div class="close"><img src="./image/close.svg" alt="" /></div>
         </header>
         <section class="create-account">
-            
             <!-- FORM SECTION -->
             <form action="" method="post">
                 <h2>Login to PictureStock</h2>
-                <p class="link-to-login">Dont't have an account? <a href="./index.html">signup</a></p>
+                <p class="link-to-login">Don't have an account? <a href="./index.html">signup</a></p>
                 <input type="email" placeholder="Email address" required />
-                <input type="password" placeholder="Password" required />
+                <div class="password-container">
+                    <input type="password" name="password" id="password" placeholder="Password" required />
+                    <i class="fa-solid fa-eye-slash" id="show-password"></i>
+                </div>
+                
                 <button type="submit">LOGIN</button>
-
 
                 <!-- FORGET AND REMEMBER PASSWORD DIVISION-->
                 <div class="remember-and-forget-password">
@@ -51,5 +54,6 @@
                 <img src="./image/group_photo.jpg" alt="" />
             </div>
         </section>
+        <script src="script.js"></script>
     </body>
 </html>

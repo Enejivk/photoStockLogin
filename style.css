@@ -68,7 +68,8 @@ form h2 {
 }
 /* STYLING FOR INPUT AND BUTTONS */
 form > input,
-form > button {
+form > button,
+#password {
     border: 1px solid black;
     padding: 14px 30px;
     border-radius: 8px;
@@ -76,6 +77,7 @@ form > button {
 }
 form > input,
 form > button,
+#password,
 hr {
     margin: 8px 0;
     width: 90%;
@@ -114,6 +116,19 @@ button[type="submit"]:hover {
     color: black;
     background-color: rgb(255, 254, 252);
 }
+
+/* SHOW PASSWORD STYLING */
+.password-container{
+    position: relative;
+    
+}
+.fa-solid{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+
+}
+
 /* FORGET AND REMEMBER ME */
 .remember-and-forget-password {
     width: 90%;
@@ -155,7 +170,8 @@ button[type="submit"]:hover {
     }
     form > input,
     form > button,
-    form>hr {
+    #password,
+    form > hr {
         min-width: 80vw;
     }
 }
@@ -180,7 +196,8 @@ button[type="submit"]:hover {
         font-size: 10px;
     }
     form > input,
-    form > button {
+    form > button,
+    #password {
         min-width: 80vw;
     }
     .remember-and-forget-password a,
