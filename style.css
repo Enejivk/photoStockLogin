@@ -33,6 +33,7 @@ header {
 .close:hover {
     transform: rotate(30deg);
 }
+
 /* CREATE ACCOUNT CONTAINER STYLING */
 .create-account {
     width: 80%;
@@ -69,6 +70,7 @@ form h2 {
 /* STYLING FOR INPUT AND BUTTONS */
 form > input,
 form > button,
+#confirm-password,
 #password {
     border: 1px solid black;
     padding: 14px 30px;
@@ -171,6 +173,7 @@ button[type="submit"]:hover {
     form > input,
     form > button,
     #password,
+    #confirm-password,
     form > hr {
         min-width: 80vw;
     }
@@ -197,6 +200,7 @@ button[type="submit"]:hover {
     }
     form > input,
     form > button,
+    #confirm-password,
     #password {
         min-width: 80vw;
     }
