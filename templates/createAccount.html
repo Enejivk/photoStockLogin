@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="icon" href="../image/faveIcon.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <title>photoStock | Create Account</title>
+    </head>
+    <body>
+        <!-- HEADER CONTAINING THE LOGO -->
+        <header>
+            <div class="logo">
+                <img src="../image/logo.svg" alt="" />
+                <h2>PictureStock</h2>
+            </div>
+            <div class="close"><img src="../image/close.svg" alt="" /></div>
+        </header>
+        <section class="create-account">
+            <!-- FORM SECTION -->
+            <form action="testing.html">
+                <h2>Create an account</h2>
+                <p class="link-to-login">Have an account? <a href="./login.html">Login</a></p>
+                <input type="text" placeholder="Business name" id="business-name" />
+                <input type="text" placeholder="Website (optional)" id="website" />
+                <input type="email" placeholder="Email address" id="email" required />
+                <div class="password-container">
+                    <input type="password" name="password" id="password" placeholder="Password" class="password" required />
+                    <i class="fa-solid fa-eye-slash eye-icon" id="show-password"></i>
+                </div>
+                <div class="password-container confirmPasswordContainer">
+                    <input type="password" name="password" id="confirm-password" placeholder="Confirm Password" class="password" required />
+                    <label for=""></label>
+                    <i class="fa-solid fa-eye-slash eye-icon" id="show-password"></i>
+                </div>
+                
+                <button type="submit" id="signin">SIGNUP</button>
+                <hr />
+                <button type="button" class="sign-in-with-google">
+                    <img src="../image/google_logo.svg" alt="Google Logo" />
+                    <b>Sign in with Google</b>
+                </button>
+                <p class="terms-and-condition">By creating an account, you agree to PictureStock’s <a href="">Terms of Service</a>, and have read and understood the <a href="">Privacy Policy.</a></p>
+            </form>
+
+            <!-- FORM IMAGE  -->
+            <div class="create-account-group-picture">
+                <img src="../image/group_photo.jpg" alt="" class="image" />
+            </div>
+        </section>
+        <script src="../script/formAndFormValidation.js"></script>
+    </body>
+</html>

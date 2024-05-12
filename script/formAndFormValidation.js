@@ -11,7 +11,6 @@ const submitButton = document.getElementById('signin');
 const emailInput = document.getElementById('email');
 
 
-
 /* SHOW AND HID PASSWORD INCLUDING CONFIRM PASSWORD */
 for(let i = 0; i < passwordInputs.length; i++){
     showPasswordIcons[i].addEventListener('click', (even) => {
