@@ -19,21 +19,23 @@
         </header>
         <section class="create-account">
             <!-- FORM SECTION -->
-            <form action="" method="post">
+            <form action="testing.html">
                 <h2>Create an account</h2>
                 <p class="link-to-login">Have an account? <a href="./login.html">Login</a></p>
-                <input type="text" placeholder="Business name" required />
-                <input type="text" placeholder="Website (optional)" />
-                <input type="email" placeholder="Email address" required />
+                <input type="text" placeholder="Business name" id="business-name" />
+                <input type="text" placeholder="Website (optional)" id="website" />
+                <input type="email" placeholder="Email address" id="email" required />
                 <div class="password-container">
                     <input type="password" name="password" id="password" placeholder="Password" class="password" required />
                     <i class="fa-solid fa-eye-slash eye-icon" id="show-password"></i>
                 </div>
-                <div class="password-container">
+                <div class="password-container confirmPasswordContainer">
                     <input type="password" name="password" id="confirm-password" placeholder="Confirm Password" class="password" required />
+                    <label for=""></label>
                     <i class="fa-solid fa-eye-slash eye-icon" id="show-password"></i>
                 </div>
-                <button type="submit">SIGNUP</button>
+                
+                <button type="submit" id="signin">SIGNUP</button>
                 <hr />
                 <button type="button" class="sign-in-with-google">
                     <img src="./image/google_logo.svg" alt="Google Logo" />

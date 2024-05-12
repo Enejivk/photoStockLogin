@@ -151,6 +151,10 @@ button[type="submit"]:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+.error{
+    color: red;
+    font-size: 13px;
+}
 /* DESIGN FOR TABLET */
 @media screen and (max-width: 1000px) {
     .create-account {
@@ -177,6 +181,10 @@ button[type="submit"]:hover {
     form > hr {
         min-width: 80vw;
     }
+    .error{
+    color: red;
+    font-size: 11px;
+}
 }
 
 /* DESIGN FOR MOBILE SCREEN */
