@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --border: 1px solid black;
+    --text-color: white;
+    --bg-color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--text-color);
+    align-items: center;
+    padding: 10px 25px;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+nav li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+nav a {
+    padding: 15px 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    color: black;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: white;
+    background-color: black;
+}
+
+.menu-logins {
+    margin-left: 5rem;
+}
+.menu-logins a {
+    padding: 10px 27px;
+    border-radius: 7px;
+    border: var(--border);
+    margin-left: 10px;
+}
+
+#close-menu,
+#open-menu,
+#toggle-menu,
+#overlay {
+    display: none;
+}
+
+/* ADJUSTING THE PADDING AND MARGIN TO MAKE IT RESPONSIVE */
+@media screen and (max-width: 858px) {
+    nav a {
+        padding: 15px 13px;
+    }
+    .menu-logins {
+        margin-left: 2rem;
+    }
+}
+
+/* DESIGN FOR TABLET */
+@media screen and (max-width: 731px) {
+    nav a {
+        padding: 15px 2px;
+        letter-spacing: 0;
+        font-size: 9px;
+    }
+    .menu-logins {
+        margin-left: 0;
+    }
+    .menu-logins a {
+        padding: 7px 10px;
+    }
+    #logo {
+        width: 30vw;
+    }
+}
+
+/* DESIGN FOR MOBILE SCREEN */
+@media screen and (max-width: 430px) {
+    #close-menu,
+    #open-menu {
+        display: block;
+    }
+    #close-menu {
+        padding: 10px;
+    }
+    nav ul {
+        display: block;
+        position: fixed;
+        height: 100%;
+        width: 250px;
+        background-color: var(--bg-color);
+        top: 0;
+        right: -130%;
+        z-index: 10;
+        transition: 0.7s ease-in-out;
+    }
+    nav li {
+        display: flex;
+    }
+    nav a {
+        font-size: 12px;
+        width: 100%;
+        padding: 15px 20px;
+        color: var(--text-color);
+    }
+    #logo {
+        width: auto;
+    }
+    .menu-logins {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0;
+        width: 60%;
+        margin: 30px auto;
+    }
+    .menu-logins a {
+        margin-left: 0;
+        border-color: var(--text-color);
+    }
+    nav a:hover {
+        background-color: white;
+        color: black;
+    }
+    #toggle-menu:checked ~ ul {
+        right: 0;
+    }
+    #toggle-menu:checked ~ #overlay {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        right: 0;
+        top: 0;
+        z-index: 9;
+    }
+    #close-menu{
+        width: 50px;
+    }
+    #close-menu:hover{
+        background-color: red;
+    }
+}
