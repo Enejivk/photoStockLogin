@@ -41,7 +41,7 @@ nav a {
     transition: 0.5s;
 }
 
-nav a:hover {
+a:hover {
     color: white;
     background-color: black;
 }
@@ -119,6 +119,7 @@ nav a:hover {
         width: 100%;
         padding: 15px 20px;
         color: var(--text-color);
+        padding: 15px 13px;
     }
     #logo {
         width: auto;
@@ -142,6 +143,7 @@ nav a:hover {
         right: 0;
     }
     #toggle-menu:checked ~ #overlay {
+        display: block;
         position: fixed;
         height: 100%;
         width: 100%;
@@ -149,10 +151,10 @@ nav a:hover {
         top: 0;
         z-index: 9;
     }
-    #close-menu{
+    #close-menu {
         width: 50px;
     }
-    #close-menu:hover{
+    #close-menu:hover {
         background-color: red;
     }
 }
