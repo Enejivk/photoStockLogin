@@ -146,8 +146,9 @@ button[type="submit"]:hover {
 
 .no-underline {
     text-decoration: none;
+    color: black;
 }
-.no-underline:hover {
+form .no-underline:hover{
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -155,6 +156,7 @@ button[type="submit"]:hover {
     color: red;
     font-size: 13px;
 }
+
 /* DESIGN FOR TABLET */
 @media screen and (max-width: 1000px) {
     .create-account {
