@@ -39,6 +39,9 @@
     font-size: 12px;
     width: 24rem;
 }
+
+
+/* GENERAL STYLING FOR ALL THE LINK */
 .hero-section-item a,
 .gallery a,
 .main-gallery a {
@@ -75,11 +78,13 @@
     margin-top: 40px;
     font-size: 34px;
 }
-.gallery h3 {
+.gallery h3,
+.main-gallery h3 {
     margin: 23px;
+    font-weight: 500;
 }
 
-/* LAPTOP STYLING */
+/* LAPTOP IMAGE STYLING */
 .laptop-desktop-image {
     width: 80%;
 }
@@ -87,7 +92,8 @@
     width: 100%;
 }
 .main-gallery {
-    background-color: var(--bk-color);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 32%, rgba(157,157,157,1) 51%, rgba(254,254,254,1) 100%);
+
     color: white;
     padding-top: 100px;
 
@@ -95,6 +101,7 @@
 .main-gallery a {
     color: black;
     font-weight: bold;
+    background-color: white;
 }
 .main-gallery-image {
     width: 80%;
