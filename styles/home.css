@@ -80,7 +80,7 @@
 .gallery h3,
 .main-gallery h3 {
     margin: 23px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 /* LAPTOP IMAGE STYLING */
@@ -101,6 +101,11 @@
     color: black;
     font-weight: bold;
     background-color: white;
+}
+.main-gallery a:hover{
+    color: white;
+    background: black;
+    border: 1px solid white;
 }
 .main-gallery-image {
     width: 80%;
