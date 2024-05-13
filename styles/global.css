@@ -120,6 +120,8 @@ a:hover {
         padding: 15px 20px;
         color: var(--text-color);
         padding: 25px 15px;
+        display: flex;
+        justify-content: center;
     }
     #logo {
         width: auto;

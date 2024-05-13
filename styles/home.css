@@ -40,7 +40,6 @@
     width: 24rem;
 }
 
-
 /* GENERAL STYLING FOR ALL THE LINK */
 .hero-section-item a,
 .gallery a,
@@ -92,11 +91,11 @@
     width: 100%;
 }
 .main-gallery {
-    background: linear-gradient(180deg, rgba(0,0,0,1) 32%, rgba(157,157,157,1) 51%, rgba(254,254,254,1) 100%);
-
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 19%, rgba(157, 157, 157, 1) 59%, rgba(254, 254, 254, 1) 100%);
     color: white;
     padding-top: 100px;
-
+    overflow: hidden;
+    height: 750px;
 }
 .main-gallery a {
     color: black;
@@ -109,8 +108,13 @@
 .main-gallery-image img {
     width: 100%;
 }
-.dont-show-desktop{
+.dont-show-desktop {
     display: none;
+}
+@media screen and (max-width: 1000px) {
+    .main-gallery {
+        height: 590px;
+    }
 }
 @media screen and (max-width: 858px) {
     .hero-section {
@@ -127,7 +131,10 @@
         font-size: 12px;
     }
     .gallery {
-        height: 24em;
+        height: 29em;
+    }
+    .main-gallery {
+        height: 590px;
     }
 }
 @media screen and (max-width: 731px) {
@@ -144,12 +151,15 @@
     .hero-section-item p:nth-of-type(2) {
         font-size: 9px;
     }
-    .show-desktop-only{
+    .show-desktop-only {
         display: none;
     }
-    .dont-show-desktop{
-    display: block;
-}
+    .dont-show-desktop {
+        display: block;
+    }
+    .main-gallery {
+        height: 640px;
+    }
 }
 @media screen and (max-width: 430px) {
     .hero-section {
@@ -190,5 +200,8 @@
     }
     .hero-section-item a {
         padding: 10px 60px;
+    }
+    .main-gallery {
+        height: 540px;
     }
 }
