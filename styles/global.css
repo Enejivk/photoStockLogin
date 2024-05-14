@@ -74,7 +74,6 @@ footer {
     flex-wrap: wrap;
     padding: 40px 90px;
     gap: 30px;
-
 }
 footer ul {
     flex-basis: 200px;
@@ -84,11 +83,10 @@ footer > div {
     flex-basis: 200px;
     flex-grow: 2;
 }
-footer>div p{
+footer > div p {
     margin: 30px 0;
-    width: 340px;
 }
-footer>div h2{
+footer > div h2 {
     margin: 10px 0;
 }
 footer > div,
@@ -102,7 +100,7 @@ footer a {
     line-height: 40px;
     font-size: 14px;
 }
-footer >div .socials *{
+footer > div .socials * {
     margin-right: 10px;
 }
 /* ADJUSTING THE PADDING AND MARGIN TO MAKE IT RESPONSIVE */
@@ -131,7 +129,11 @@ footer >div .socials *{
     #logo {
         width: 30vw;
     }
-       footer,
+    footer ul,
+    footer > div {
+        margin: 0 auto;
+    }
+    footer,
     footer li {
         text-align: center;
     }
@@ -209,7 +211,13 @@ footer >div .socials *{
     footer li {
         text-align: center;
     }
-    footer a{
+    footer a {
         line-height: 5px;
+    }
+    footer > div img {
+        width: 20px;
+    }
+    footer > div .socials * {
+        margin-right: 5px;
     }
 }
