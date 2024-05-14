@@ -57,6 +57,9 @@
     background-color: white;
     color: black;
 }
+li{
+    list-style: none;
+}
 .hero-item-image {
     display: none;
 }
@@ -119,6 +122,7 @@
     display: none;
 }
 
+
 /* OFFERS SECTION */
 .offers h1{
     text-align: center;
@@ -151,6 +155,8 @@
     text-align: center;
 }
 
+/* FOOTER SECTION */
+/* since footer design is going to be in every page i move the design to global.css file */
 
 
 @media screen and (max-width: 1000px) {
@@ -247,4 +253,5 @@
     .main-gallery {
         height: 540px;
     }
+}
 }
