@@ -73,11 +73,13 @@
 .gallery {
     height: 33em;
 }
-.gallery h1 {
+.gallery h1,
+.review h1 {
     margin-top: 40px;
     font-size: 34px;
 }
 .gallery h3,
+.review>p,
 .main-gallery h3 {
     margin: 23px;
     font-weight: 400;
@@ -116,30 +118,38 @@
 .dont-show-desktop {
     display: none;
 }
+
 /* OFFERS SECTION */
 .offers h1{
     text-align: center;
-    margin-top: 40px;
+    margin: 40px auto
 }
-.offers-item-container{
+.offers-item-container,
+.review-item-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 70%;
     margin: 0 auto;
     flex-wrap: wrap;
 }
-.offers-items{
+.offers-items,
+.review-items{
     flex-basis: 300px;
     text-align: center;
     padding: 20px;
     box-shadow: 0px 0px 46px -27px rgba(0,0,0,0.75);
     align-self: stretch;
+    font-size: 15px;
+    margin: 0 auto;
 }
-.offers-items h2{
+.offers-items h2,
+.review-items h2{
     margin: 13px 0;
 }
-
+.review{
+    text-align: center;
+}
 
 
 
