@@ -116,10 +116,37 @@
 .dont-show-desktop {
     display: none;
 }
+/* OFFERS SECTION */
+.offers h1{
+    text-align: center;
+    margin-top: 40px;
+}
+.offers-item-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.offers-items{
+    flex-basis: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 46px -27px rgba(0,0,0,0.75);
+}
+.offers-items h2{
+    margin: 13px 0;
+}
+
+
+
+
 @media screen and (max-width: 1000px) {
     .main-gallery {
         height: 590px;
     }
+
 }
 @media screen and (max-width: 858px) {
     .hero-section {
