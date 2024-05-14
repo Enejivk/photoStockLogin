@@ -134,6 +134,7 @@
     text-align: center;
     padding: 20px;
     box-shadow: 0px 0px 46px -27px rgba(0,0,0,0.75);
+    align-self: stretch;
 }
 .offers-items h2{
     margin: 13px 0;
