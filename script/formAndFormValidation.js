@@ -10,7 +10,7 @@ const websiteInput = document.getElementById('website');
 const submitButton = document.getElementById('signin');
 const emailInput = document.getElementById('email');
 
-
+console.log(passwordInputs);
 /* SHOW AND HID PASSWORD INCLUDING CONFIRM PASSWORD */
 for(let i = 0; i < passwordInputs.length; i++){
     showPasswordIcons[i].addEventListener('click', (even) => {
@@ -23,6 +23,7 @@ for(let i = 0; i < passwordInputs.length; i++){
         }
     })
 }
+
 
 
 /**
