@@ -151,6 +151,9 @@ li{
 .review-items h2{
     margin: 13px 0;
 }
+.offers-items .image{
+    height: 60px;
+}
 .review{
     text-align: center;
 }
