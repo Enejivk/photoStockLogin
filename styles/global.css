@@ -203,9 +203,10 @@ footer > div .socials * {
     }
     #close-menu {
         width: 50px;
+        transition: .7s;
     }
     #close-menu:hover {
-        background-color: rgb(255, 255, 255);
+        transform: rotate(90deg);
     }
     footer,
     footer li {
