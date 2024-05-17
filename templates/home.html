@@ -5,13 +5,31 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../styles/home.css" />
+        <link rel="icon" href="../image/faveIcon.svg" type="image/svg+xml" />
         <title>PhotoStock | Home</title>
     </head>
     <body>
         <!-- <button class="toggle-nav">open nav</button> -->
         <div class="outer-dashboard-container">
-            <nav></nav>
-            <aside></aside>
+            <nav>
+                <div class="logo">
+                    <img src="../image/Icons/whiteLogo.svg" alt="" />
+                </div>
+                <div class="acc-details">
+                    <img src="../image/Icons/circle_notifications.svg" alt="" />
+                    <img src="../image/Icons/account_circle.svg" alt="" />
+                    <p>Hi Shawn</p>
+                </div>
+            </nav>
+            <aside class="side-bar">
+                <ul class="dashboard-nav">
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">ORDERS</a></li>
+                    <li><a href="">WITHDRAWALS</a></li>
+                    <li><a href="">PROFILE</a></li>
+                    <li><a href="">BLOG</a></li>
+                </ul>
+            </aside>
             <main>
                 <div class="chart">
                     <div class="income-stats"></div>
@@ -30,6 +48,6 @@
                 </div>
             </main>
         </div>
-        <script src="app.js"></script>
+        <script src="../script/home.js"></script>
     </body>
 </html>
