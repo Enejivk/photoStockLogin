@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../styles/home.css" />
         <link rel="icon" href="../image/faveIcon.svg" type="image/svg+xml" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <title>PhotoStock | Home</title>
     </head>
     <body>
@@ -32,7 +33,11 @@
             </aside>
             <main>
                 <div class="chart">
-                    <div class="income-stats"></div>
+                    <div class="income-stats">
+                        <canvas id="myChart" height="40vh" width="50vw">
+                            
+                        </canvas>
+                    </div>
                     <div class="sale-overview"></div>
                 </div>
                 <div class="sales">
@@ -48,6 +53,7 @@
                 </div>
             </main>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="../script/home.js"></script>
     </body>
 </html>

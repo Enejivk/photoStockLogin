@@ -20,8 +20,7 @@ html {
     grid-template-areas:
         "nav nav"
         "sidebar main";
-    transition: grid-template-columns .7s;
-    color: white;
+    transition: grid-template-columns 0.7s;
 }
 
 nav {
@@ -80,31 +79,37 @@ nav {
 }
 
 /* SIDEBAR STYLING */
-aside ul{
-    transition: .7s;
+aside ul {
+    transition: 0.7s;
 }
 
 aside ul li {
     text-align: center;
     list-style: none;
     transition: 1s;
+    padding: 10px 0;
 }
 aside ul a {
     text-decoration: none;
     display: block;
     padding: 10px 5px;
     width: 80%;
-    margin: 25px auto;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 253, 253);
+    color: rgb(255, 255, 255);
     overflow: hidden;
 }
+
 aside ul li:nth-child(1) a {
     background-color: white;
     color: black;
 }
-
+aside ul li:hover a{
+    background-color: rgb(119, 117, 117);
+    color: black;
+}
+#myChart{
+    width: 100px;
+}
 @media screen and (max-width: 1030px) {
     aside ul {
         overflow: hidden;

@@ -24,8 +24,6 @@ for(let i = 0; i < passwordInputs.length; i++){
     })
 }
 
-
-
 /**
  * This function checks length of an input value
  * @param {string} input - this is the actual value of the input field
@@ -80,7 +78,6 @@ const checkPasswordMatch = (password, confirmPassword) => {
         return true
     }
 }
-
 
 
 /**

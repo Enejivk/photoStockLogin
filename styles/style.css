@@ -71,6 +71,7 @@ form h2 {
 form > input,
 form > button,
 #confirm-password,
+.sign-in-with-google,
 #password {
     border: 1px solid black;
     padding: 14px 30px;
@@ -79,6 +80,7 @@ form > button,
 }
 form > input,
 form > button,
+.sign-in-with-google,
 #password,
 hr {
     margin: 8px 0;
@@ -100,9 +102,11 @@ hr {
     width: 87%;
 }
 .sign-in-with-google {
+    border: 1px solid black;
     justify-content: center;
     column-gap: 30px;
-    transition: 0.7s;
+    transition: 0.4s;
+    text-decoration: none;
 }
 .sign-in-with-google:hover {
     background-color: black;
@@ -180,6 +184,7 @@ form .no-underline:hover{
     form > button,
     #password,
     #confirm-password,
+    .sign-in-with-google,
     form > hr {
         min-width: 80vw;
     }
@@ -211,6 +216,7 @@ form .no-underline:hover{
     form > input,
     form > button,
     #confirm-password,
+    .sign-in-with-google,
     #password {
         min-width: 80vw;
     }
