@@ -103,12 +103,14 @@ aside ul li:nth-child(1) a {
     background-color: white;
     color: black;
 }
-aside ul li:hover a{
+aside ul li:hover a {
     background-color: rgb(119, 117, 117);
     color: black;
 }
-#myChart{
-    width: 100px;
+canvas {
+    display: block;
+    width: 90% !important;
+    height: 90% !important;
 }
 @media screen and (max-width: 1030px) {
     aside ul {
