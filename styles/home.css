@@ -15,7 +15,7 @@ html {
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: 290px 1fr;
     grid-template-rows: 64px 1fr;
     grid-template-areas:
         "nav nav"
@@ -25,7 +25,7 @@ html {
 
 nav {
     grid-area: nav;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(2, 2, 2);
 }
 
 aside {
@@ -50,7 +50,7 @@ main {
 .chart div,
 .popular-pictures div,
 .sales div {
-    border: 2px solid rgb(3, 3, 3);
+    /* border: 2px solid rgb(3, 3, 3); */
     border-radius: 7px;
 }
 .chart {
@@ -97,6 +97,7 @@ aside ul a {
     border-radius: 10px;
     color: rgb(255, 255, 255);
     overflow: hidden;
+    margin: 0 auto;
 }
 
 aside ul li:nth-child(1) a {
@@ -107,10 +108,40 @@ aside ul li:hover a {
     background-color: rgb(119, 117, 117);
     color: black;
 }
-canvas {
-    display: block;
-    width: 90% !important;
-    height: 90% !important;
+
+/* STYLING FOR THE CHART */
+.income-stats {
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+}
+
+.sale-overview {
+    width: 22vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+/* CHART BUTTONS */
+.first-chart-button{
+    position: absolute;
+    right: 10%;
+}
+.second-chart-container{
+    width: 18vw;
+    height: 45vh;
+}
+.chart-button button{
+    width: 70px;
+    padding: 4px 7px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.chart-button button:hover{
+    background-color: black;
+    color: white;
 }
 @media screen and (max-width: 1030px) {
     aside ul {
@@ -119,5 +150,9 @@ canvas {
     }
     .outer-dashboard-container {
         grid-template-columns: 0 1fr;
+    }
+    .income-stats {
+        width: 70vw;
+        height: 56vh;
     }
 }

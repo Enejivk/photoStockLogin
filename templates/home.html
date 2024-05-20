@@ -13,9 +13,11 @@
         <!-- <button class="toggle-nav">open nav</button> -->
         <div class="outer-dashboard-container">
             <nav>
-                <div class="logo">
-                    <img src="../image/Icons/whiteLogo.svg" alt="" />
-                </div>
+                <a href="./landing.html">
+                    <div class="logo">
+                        <img src="../image/Icons/whiteLogo.svg" alt="" />
+                    </div>
+                </a>
                 <div class="acc-details">
                     <img src="../image/Icons/circle_notifications.svg" alt="" />
                     <img src="../image/Icons/account_circle.svg" alt="" />
@@ -34,11 +36,26 @@
             <main>
                 <div class="chart">
                     <div class="income-stats">
-                        <canvas id="myChart">
-                            
-                        </canvas>
+                        <div class="char-categories"></div>
+                        <div class="first-chart-button chart-button">
+                            <button>Day</button>
+                            <button>Month</button>
+                            <button>Year</button>
+                            <button>All-Time</button>
+                        </div>
+                        <canvas id="myChart"></canvas>
                     </div>
-                    <div class="sale-overview"></div>
+                    <div class="sale-overview">
+                        <div class="second-chart-container">
+                            <canvas id="secondChart" width="240px"></canvas>
+                        </div>
+                        <div class="second-chart-button chart-button">
+                            <button>Day</button>
+                            <button>Month</button>
+                            <button>Year</button>
+                            <button>All-Time</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="sales">
                     <div class="total-sales"></div>
