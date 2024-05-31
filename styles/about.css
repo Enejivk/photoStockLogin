@@ -51,10 +51,34 @@
     font-family: Gabriela Stencil W00 Bold, sans-serif;
     margin: 10px 0;
 }
+
+/* WHY US SECTION */
+.why-us {
+    background-color: rgb(222, 222, 222);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 45px 0;
+}
+.why-us-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.why-us-item h2 {
+    font-size: 24px;
+    font-family: Gabriela Stencil W00 Bold, sans-serif;
+}
+.why-us-item {
+    font-size: 16px;
+}
 @media screen and (max-width: 741px) {
-  .mission-section{
-    text-align: center;
-  }
+    .mission-section {
+        text-align: center;
+    }
     .mission-section-item-text {
         width: 80%;
         min-width: 80%;
@@ -67,10 +91,13 @@
         margin-right: 3px;
     }
     /* REARRANGING THE ORDER OF MISSION ITEM */
-    .item-two .mission-section-item-image{
+    .item-two .mission-section-item-image {
         order: 1;
     }
-    .item-two .mission-section-item-text{
+    .item-two .mission-section-item-text {
         order: 2;
+    }
+    .why-us{
+        text-align: center;
     }
 }
