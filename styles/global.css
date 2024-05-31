@@ -103,6 +103,10 @@ footer a {
 footer > div .socials * {
     margin-right: 10px;
 }
+.padding-bottom {
+    padding-bottom: 60px;
+    border: 2px solid black;
+}
 /* ADJUSTING THE PADDING AND MARGIN TO MAKE IT RESPONSIVE */
 @media screen and (max-width: 858px) {
     nav a {
@@ -203,7 +207,7 @@ footer > div .socials * {
     }
     #close-menu {
         width: 50px;
-        transition: .7s;
+        transition: 0.7s;
     }
     #close-menu:hover {
         transform: rotate(90deg);

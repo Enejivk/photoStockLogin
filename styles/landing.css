@@ -3,10 +3,6 @@
     --text-color: white;
     --bk-color: black;
 }
-.padding-bottom {
-    padding-bottom: 60px;
-    border: 2px solid black;
-}
 
 /* HERO SECTION */
 .hero-section {
