@@ -52,6 +52,9 @@
     margin: 10px 0;
 }
 @media screen and (max-width: 741px) {
+  .mission-section{
+    text-align: center;
+  }
     .mission-section-item-text {
         width: 80%;
         min-width: 80%;
