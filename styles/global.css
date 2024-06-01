@@ -42,7 +42,7 @@ nav a {
     transition: 0.5s;
 }
 
-a:hover {
+nav ul a:hover {
     color: white;
     background-color: black;
 }
@@ -69,8 +69,8 @@ a:hover {
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: var(--bk-color);
-    color: var(--text-color);
+    background-color: black;
+    color: white;
     flex-wrap: wrap;
     padding: 40px 90px;
     gap: 30px;
@@ -89,14 +89,18 @@ footer > div p {
 footer > div h2 {
     margin: 10px 0;
 }
+footer li{
+    list-style: none;
+}
 footer > div,
 footer ul {
     font-size: 14px;
     padding: 10px;
     justify-content: center;
 }
+
 footer a {
-    color: var(--text-color);
+    color: white;
     line-height: 40px;
     font-size: 14px;
 }

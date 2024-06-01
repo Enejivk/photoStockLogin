@@ -2,6 +2,9 @@
 @import url("https://db.onlinewebfonts.com/c/368ffe166edce08259aef8608067057a?family=Gabriela+Stencil+W00+Bold");
 
 /* ABOUT SECTION HERO PAGE */
+html{
+    font-size: 16px;
+}
 .about-hero {
     height: 353px;
     background-image: url(../image/about_page_images/About-page-hero.png);
@@ -102,8 +105,57 @@
 .meet-the-team .overlay h2 {
     padding: 17px 0;
 }
-@media screen and (max-width: 741px) {
+/* SUBSCRIBE SECTION */
+.subscribe-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
+.subscribe-text h2{
+    font-size: 36px;
+    font-family: Gabriela Stencil W00 Bold, sans-serif;
+    margin-bottom: 20px;
+}
+.subscribe-text p{
+    font-weight: bold;
+}
+.subscribe-section > * {
+    width: 37%;
+}
+.subscribe-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 40px 0;
+}
+.subscribe-form >*{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-style: italic;
+}
+
+input[type="email"],
+.subscribe-form button {
+    grid-column: span 2;
+    font-size: 16px;
+    
+}
+.subscribe-form button{
+    background-color: black;
+    color: white;
+    font-style: normal;
+    transition: .4s;
+}
+.subscribe-form button:hover{
+    background-color: white;
+    color: black;
+
+}
+@media screen and (max-width: 741px) {
     .mission-section {
         text-align: center;
     }
@@ -132,5 +184,20 @@
     .meet-the-team .overlay p {
         font-size: 16px;
         width: 80%;
+    }
+
+    /* RESPONSIVE SUBSCRIBE SECTION */
+    .subscribe-section > * {
+        width: 80%;
+        text-align: center;
+    }
+    .subscribe-form {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+    input[type="email"],
+    .subscribe-form button {
+        grid-column: span 1;
     }
 }
