@@ -54,7 +54,7 @@
 
 /* WHY US SECTION */
 .why-us {
-    background-color: rgb(222, 222, 222);
+    background-color: rgb(244, 244, 244);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -75,7 +75,35 @@
 .why-us-item {
     font-size: 16px;
 }
+
+/* MEET THE TEAM */
+.meet-the-team {
+    height: 519px;
+    background-image: url(../image/about_page_images/Rectangle\ 25.png);
+    background-position-y: 100px;
+    color: white;
+    text-align: center;
+}
+.meet-the-team .overlay {
+    height: 514px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 24%,
+        rgba(163, 163, 163, 0) 100%,
+        rgba(254, 254, 254, 1) 100%
+    );
+}
+
+.meet-the-team .overlay p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 24px;
+}
+.meet-the-team .overlay h2 {
+    padding: 17px 0;
+}
 @media screen and (max-width: 741px) {
+
     .mission-section {
         text-align: center;
     }
@@ -97,7 +125,12 @@
     .item-two .mission-section-item-text {
         order: 2;
     }
-    .why-us{
+    .why-us {
         text-align: center;
+    }
+    /* MEET THE TEAM SECTION STYLING MEDIA QUERY */
+    .meet-the-team .overlay p {
+        font-size: 16px;
+        width: 80%;
     }
 }
