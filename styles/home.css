@@ -16,9 +16,9 @@
 .home-nav-bar {
     grid-column: 1 / -1;
 }
-.home-content-container * {
+/* .home-content-container * {
     border: 1px solid rgb(0, 0, 0);
-}
+} */
 
 /* HOME GRAPH */
 .home-graph {
@@ -44,7 +44,6 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    
 }
 .line-graph-button button {
     padding: 2px 15px;
@@ -52,7 +51,7 @@
     border-radius: 13px;
     border: 1px solid black;
 }
-.doughnut-chart-button{
+.doughnut-chart-button {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -93,7 +92,10 @@
         justify-content: center;
         top: -10%;
     }
-    .doughnut-chart-button{
+    .doughnut-chart-button {
         flex-direction: row;
-}
+    }
+    .line-graph-button {
+        top: -20%;
+    }
 }
