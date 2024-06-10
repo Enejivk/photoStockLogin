@@ -1,0 +1,99 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.home-content-container {
+    display: grid;
+    grid-template-columns: 320px auto;
+    grid-template-rows: 64px auto;
+    height: 100vh;
+}
+.home-nav-bar {
+    grid-column: 1 / -1;
+}
+/* .home-content-container * {
+    border: 1px solid rgb(0, 0, 0);
+} */
+
+/* HOME GRAPH */
+.home-graph {
+    display: flex;
+    height: 312px;
+    margin-top: 40px;
+}
+
+.home-graph-container,
+.home-doughnut-container {
+    position: relative;
+    width: 50%;
+}
+
+/* DOUGHNUT */
+.doughnut {
+    width: 80%;
+}
+
+/* LINE GRAPH DESIGN */
+.line-graph-button {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+.line-graph-button button {
+    padding: 2px 15px;
+    margin: 0 6px;
+    border-radius: 13px;
+    border: 1px solid black;
+}
+.doughnut-chart-button{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 2%;
+    right: 5%;
+}
+.doughnut-chart-button button {
+    margin: 5px 4px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+@media screen and (max-width: 1000px) {
+    .home-content-container {
+        grid-template-columns: 0 auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .home-graph {
+        flex-direction: column;
+    }
+    .home-graph-container,
+    .home-doughnut-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .home-graph-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .doughnut {
+        width: 100%;
+    }
+    .home-graph {
+        height: 90vh;
+    }
+    .line-graph-button {
+        justify-content: center;
+        top: -10%;
+    }
+    .doughnut-chart-button{
+        flex-direction: row;
+}
+}

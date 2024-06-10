@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/faveIcon.svg" type="image/svg+xml" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>photoStock | Home Page</title>
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+
+<body>
+
+    <!-- GRID CONTAINER TO LAYOUT THE CONTENT -->
+    <div class="home-content-container">
+
+        <!-- THE NAVE BAR -->
+        <nav class="home-nav-bar">
+            home-nav-bar
+        </nav>
+
+        <!-- THE SIDE BAR -->
+        <aside home-side-bar>
+        </aside>
+
+        <!-- THE MAIN CONTENT -->
+        <main class="home-main-content">
+
+            <!-- THIS SECTION CONTAIN ALL THE GRAPH -->
+            <div class="home-graph">
+
+                <!-- LINE GRAPH -->
+                <div class="home-graph-container">
+                    <div class="line-graph-button">
+                        <button>Day</button>
+                        <button>Month</button>
+                        <button>Year</button>
+                        <button>All Time</button>
+                    </div>
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <!-- DOUGHNUT CHAR -->
+                <div class="home-doughnut-container graph-button">
+                    <div class="doughnut">
+                        <canvas id="myDoughnutChart"></canvas>
+                    </div>
+                    <div class="doughnut-chart-button">
+                        <button>Day</button>
+                        <button>Month</button>
+                        <button>Year</button>
+                        <button>All Time</button>
+                    </div>
+                   
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../script/home.js"></script>
+</body>
+
+</html>
