@@ -16,9 +16,9 @@
 .home-nav-bar {
     grid-column: 1 / -1;
 }
-/* .home-content-container * {
+.home-content-container * {
     border: 1px solid rgb(0, 0, 0);
-} */
+}
 
 /* HOME GRAPH */
 .home-graph {
