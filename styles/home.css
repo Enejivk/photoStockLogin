@@ -40,6 +40,7 @@
     align-items: center;
     justify-content: center;
     column-gap: 13px;
+
 }
 .home-toggle-menu {
     display: none;
@@ -212,6 +213,7 @@
     }
     .home-logo {
         width: 30vw;
+        min-width: 160px;
 
     }
     .home-logo img {
