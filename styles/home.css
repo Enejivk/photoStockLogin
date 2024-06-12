@@ -16,12 +16,13 @@
     transition: 0.8s;
     position: relative;
 }
-/* .overlay{
+.overlay{
     height: 100vh;
     width: 100vw;
     position: absolute;
     z-index: 19;
-} */
+    display: none;
+}
 /* NAVIGATION BAR */
 
 .home-nav-bar {

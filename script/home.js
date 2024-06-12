@@ -1,12 +1,20 @@
 /** @format */
 
 const toggleMenuButton = document.getElementById('home-toggle-button')
+const overlay = document.querySelector('.overlay')
+
 
 // FUNCTION TO TOGGLE THE SIDE BAR
 const toggleSideBar = () => {
     const menu = document.getElementById('menu')
     menu.classList.toggle('show-menu')
+    if (menu.classList.contains('show-menu')) {
+        overlay.style.display = 'block'
+    } else {
+        overlay.style.display = 'none'
+    }
 }
+
 const graphLabel = {
     month: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct'],
     days: ['Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'],
@@ -92,3 +100,4 @@ const createDoughnutChar = () => {
 createLineGraph()
 createDoughnutChar()
 toggleMenuButton.addEventListener('click', toggleSideBar)
+overlay.addEventListener('click', toggleSideBar)
