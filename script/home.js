@@ -1,5 +1,12 @@
 /** @format */
 
+const toggleMenuButton = document.getElementById('home-toggle-button')
+
+// FUNCTION TO TOGGLE THE SIDE BAR
+const toggleSideBar = () => {
+    const menu = document.getElementById('menu')
+    menu.classList.toggle('show-menu')
+}
 const graphLabel = {
     month: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct'],
     days: ['Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'],
@@ -8,7 +15,6 @@ const graphLabel = {
 
 const createLineGraph = () => {
     const ctx = document.getElementById('myChart').getContext('2d')
-
 
     new Chart(ctx, {
         type: 'line',
@@ -20,7 +26,6 @@ const createLineGraph = () => {
                     data: [2, 11, 5, 12, 3, 40, 45, 15, 20, 3],
                     borderWidth: 1,
                     borderColor: 'black',
-
                 },
             ],
         },
@@ -86,3 +91,4 @@ const createDoughnutChar = () => {
 }
 createLineGraph()
 createDoughnutChar()
+toggleMenuButton.addEventListener('click', toggleSideBar)

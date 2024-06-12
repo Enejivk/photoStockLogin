@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+<div class="overlay"></div>
     <!-- GRID CONTAINER TO LAYOUT THE CONTENT -->
     <div class="home-content-container">
 
@@ -19,8 +19,14 @@
         <nav class="home-nav-bar">
             <div class="home-logo-menu-icon">
 
-                <div class="home-toggle-menu"><img src="../image/Icons/home_toggle_menu.svg" alt="" loading="lazy" /></div>
-               <a href="./landing.html"> <div><img src="../image/Icons/whiteLogo.svg" alt=""></div></a>
+                <div class="home-toggle-menu" id="home-toggle-button">
+                    <img src="../image/Icons/home_toggle_menu.svg" alt="" loading="lazy" />
+                </div>
+                <a href="./landing.html">
+                    <div class="home-logo">
+                        <img src="../image/Icons/whiteLogo.svg" alt="">
+                    </div>
+                </a>
             </div>
 
             <div class="user-features">
@@ -40,14 +46,14 @@
             <p><a href="">PROFILE</a></p>
             <p><a href="">BLOG</a></p>
         </aside>
-            <aside class="home-menu-bar">
-                <p><a href="">OVERVIEW</a></p>
-                <p><a href="">GALLERY</a></p>
-                <p><a href="">ORDERS</a></p>
-                <p><a href="">WITHDRAWALS</a></p>
-                <p><a href="">PROFILE</a></p>
-                <p><a href="">BLOG</a></p>
-            </aside>
+        <aside class="home-menu-bar" id="menu">
+            <p><a href="">OVERVIEW</a></p>
+            <p><a href="">GALLERY</a></p>
+            <p><a href="">ORDERS</a></p>
+            <p><a href="">WITHDRAWALS</a></p>
+            <p><a href="">PROFILE</a></p>
+            <p><a href="">BLOG</a></p>
+        </aside>
 
         <!-- THE MAIN CONTENT -->
         <main class="home-main-content">
