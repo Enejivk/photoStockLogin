@@ -16,7 +16,7 @@
     transition: 0.8s;
     position: relative;
 }
-.overlay{
+.overlay {
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -40,7 +40,6 @@
     align-items: center;
     justify-content: center;
     column-gap: 13px;
-
 }
 .home-toggle-menu {
     display: none;
@@ -74,7 +73,9 @@
     background-color: white;
     color: rgb(0, 0, 0);
 }
-
+.username-small-screen {
+    color: white;
+}
 .home-nav-bar {
     grid-column: 1 / -1;
 }
@@ -89,7 +90,14 @@
     padding: 20px 0;
     padding-top: 100px;
     z-index: 20;
-    transition: .7s;
+    transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+}
+.user-feature-small-screen{
+    margin: 0 auto;
+    flex: 1;
 }
 
 /* HOME GRAPH */
@@ -204,18 +212,19 @@
     .home-content-container {
         grid-template-columns: 0 auto;
     }
-    .home-nav-bar{
+    .home-main-content {
+        padding-top: 90px;
+    }
+    .home-nav-bar {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         height: 63px;
-
     }
     .home-logo {
         width: 30vw;
         min-width: 160px;
-
     }
     .home-logo img {
         width: 100%;
@@ -229,7 +238,7 @@
     .home-toggle-menu {
         display: block;
     }
-    .show-menu{
+    .show-menu {
         left: 0%;
     }
 }
@@ -238,9 +247,9 @@
         padding: 0 10px;
     }
     .user-features {
-        column-gap: 1px;
+        column-gap: 15px;
     }
-    .home-logo{
+    .home-logo {
         width: 30vw;
     }
     .home-graph {
@@ -254,6 +263,10 @@
     .home-graph-container {
         grid-template-columns: auto;
         grid-template-rows: auto;
+    }
+    .user-logo,
+    .username {
+        display: none;
     }
     .doughnut {
         width: 100%;
