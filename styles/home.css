@@ -93,11 +93,10 @@
     transition: 0.7s;
     display: flex;
     flex-direction: column;
-    row-gap: 10vh;
+    row-gap: 17vh;
 }
 .user-feature-small-screen{
     margin: 0 auto;
-    flex: 1;
 }
 
 /* HOME GRAPH */
