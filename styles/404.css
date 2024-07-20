@@ -53,5 +53,8 @@ nav ul a:hover {
     .text-for-404 {
         padding: 0 30px;
         font-size: 17px;
-    }   
+    }
+    .text-for-404 a{
+        font-size: 15px;
+    }
 }
