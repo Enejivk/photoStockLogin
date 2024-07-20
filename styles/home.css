@@ -1,5 +1,3 @@
-/** @format */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
@@ -23,8 +21,8 @@
     z-index: 19;
     display: none;
 }
-/* NAVIGATION BAR */
 
+/* NAVIGATION BAR */
 .home-nav-bar {
     background-color: black;
     display: flex;
@@ -50,6 +48,11 @@
     column-gap: 15px;
 }
 
+.user-logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
 /* HOME SIDE BAR */
 .home-side-bar {
     padding-top: 40px;
@@ -68,17 +71,21 @@
     margin: 0 auto;
     border-radius: 6px;
 }
+
 .home-menu-bar p:nth-child(1) a,
 .home-side-bar p:nth-child(1) a {
     background-color: white;
     color: rgb(0, 0, 0);
 }
+
 .username-small-screen {
     color: white;
 }
+
 .home-nav-bar {
     grid-column: 1 / -1;
 }
+
 .home-menu-bar {
     position: fixed;
     top: 8%;
@@ -107,19 +114,23 @@
     margin-top: 40px;
     gap: 20px;
 }
+
 /* HOME GENERAL STYLING */
 .home-graph > div,
 .sales > div,
 .post-picture > div {
     border-radius: 8px;
 }
+
 .home-content-container button {
     transition: 0.7s;
 }
+
 .home-content-container button:hover {
     background-color: black;
     color: white;
 }
+
 .home-content-container h1 {
     font-size: 24px;
 }
@@ -267,6 +278,7 @@
     .username {
         display: none;
     }
+    
     .doughnut {
         width: 100%;
     }

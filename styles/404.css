@@ -1,0 +1,57 @@
+
+.background-video{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -220;
+    object-fit: cover;
+}
+
+.text-for-404 {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+}
+
+.text-for-404 a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 13px 24px;
+    border-radius: 30px;
+    margin: 20px auto;
+    font-size: 20px;
+}
+.text-for-404 h1 {
+    
+    font-size: 10rem;
+    font-weight: 700;
+}
+nav{
+    background-color: transparent;
+}
+nav a{
+    color: white;
+}
+
+.menu-logins a {
+    border: 1px solid white;
+}
+.text-for-404 a:hover,
+nav ul a:hover {
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width: 703px) {
+    .text-for-404 h1 {
+        font-size: 7rem;
+    }
+    .text-for-404 {
+        padding: 0 30px;
+        font-size: 17px;
+    }   
+}
