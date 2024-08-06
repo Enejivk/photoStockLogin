@@ -1,0 +1,14 @@
+.home-content-container{
+    overflow: hidden;
+}
+.home-main-content{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    .home-content-container{
+        grid-template-rows: 100vh 656.007px;
+    }
+    
+}

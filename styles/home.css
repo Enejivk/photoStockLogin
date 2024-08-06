@@ -11,7 +11,6 @@
     grid-template-columns: 320px auto;
     grid-template-rows: 64px auto;
     height: 100vh;
-    transition: 0.8s;
     position: relative;
 }
 .overlay {
@@ -160,6 +159,7 @@
     border-radius: 13px;
     border: 1px solid black;
 }
+
 .doughnut-chart-button {
     position: absolute;
     display: flex;
@@ -167,6 +167,7 @@
     top: 2%;
     right: 5%;
 }
+
 .doughnut-chart-button button {
     margin: 5px 4px;
     padding: 4px 12px;
