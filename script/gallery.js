@@ -17,13 +17,11 @@ toggleMenuButton.addEventListener('click', toggleSideBar);
 overlay.addEventListener('click', toggleSideBar);
 
 const galleryHTML = ` <div class="gallery-picture">
-                        <div class="image">
-                            <img src="https://images.pexels.com/photos/712413/pexels-photo-712413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"alt="">
-                        </div>
+                            <img src="https://images.unsplash.com/photo-1529245019870-59b249281fd3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"alt="">
                         <div class="more-action"></div>
+                        <div class="price-and-name">
                         <p class='picture-name'>The beautiful Girl happy</p>
-                        <div class="price-and-more-picture-">
-                            <h2 class='picture-price'>N3000</h2>
+                            <h2 class='picture-price'>₦3000</h2>
                         </div>
                     </div>
                     `
