@@ -27,5 +27,6 @@ const galleryHTML = ` <div class="gallery-picture">
                     `
 
 for( i = 0; i < 10; i++){
-    galleryContainer.innerHTML += galleryHTML
+    // galleryContainer.innerHTML += galleryHTML
+    galleryContainer.insertAdjacentHTML("beforeend", galleryHTML)
 }
